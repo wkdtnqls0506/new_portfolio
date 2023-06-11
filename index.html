@@ -29,19 +29,19 @@
 </head>
 <body>
   <!-- Header -->
-  <header>
-    <div>  <!-- 단순 스타일링을 목적으로 하는 경우 div 태그 이용 -->
-      <img src="./images/favicon.ico" alt="logo">
-      <h1><a href="#">SuBangBang</a></h1>
+  <header class="header">
+    <div class="header__logo">  <!-- 단순 스타일링을 목적으로 하는 경우 div 태그 이용 -->
+      <img class="header__logo__img" src="./images/favicon.ico" alt="logo">
+      <h1 class="header__logo__title"><a href="#">SuBangBang</a></h1>
     </div>
     <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>  <!-- 원하는 섹션으로 이동하기 위하여 a 태그 사용 !-->
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#work">My work</a></li>
-        <li><a href="#testimonial">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="header__menu">
+        <li><a class="header__menu__item active" href="#home">Home</a></li>  <!-- 원하는 섹션으로 이동하기 위하여 a 태그 사용 !-->
+        <li><a class="header__menu__item" href="#about">About</a></li>
+        <li><a class="header__menu__item" href="#skills">Skills</a></li>
+        <li><a class="header__menu__item" href="#work">My work</a></li>
+        <li><a class="header__menu__item" href="#testimonial">Testimonials</a></li>
+        <li><a class="header__menu__item" href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
