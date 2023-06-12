@@ -92,3 +92,49 @@ button:focus {
     border: 1px solid var(--color-accent);
     border-radius: 4px;
 }
+
+/* Home */
+#home {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    padding: 5rem 1rem;
+    padding-top: 7rem;
+    text-align: center;
+}
+
+.home__avatar {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;  /* 대체 컨텐츠의 가로세로비를 유지하면서, 요소 콘텐츠 박스를 가득 채움. 서로의 가로세로비가 일치하지 않으면 객체 일부가 잘려나감(이미지의 원래 비율을 유지) */
+    border: 3px solid var(--color-accent);
+    border-radius: 100%;
+}
+
+.home__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home__title--strong {
+    color: var(--color-accent);
+}
+
+.home__description {
+    font-size: 1.3rem;
+}
+
+.home__contact {  /* <a> 태그는 inline 요소라 위아래로 margin이 들어가지 않음 */
+    display: inline-block;
+    background-color: var(--color-accent);
+    padding: 0.5rem 1rem;
+    margin: 2rem;
+    font-weight: bold;
+    color: var(--color-black);
+    border-radius: 4px;
+}
+
+.home__contact:hover {
+    background-color: transparent;
+    color: var(--color-text);
+    outline: 2px solid var(--color-accent);  /* border은 옵션의 두께만큼 박스의 전체 크기가 늘어남, outline은 박스의 크기를 늘리는 것이 아니라 단지 테두리만 생성 */
+}
