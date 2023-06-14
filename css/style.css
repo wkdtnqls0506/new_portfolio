@@ -220,3 +220,39 @@ button:focus {
     color: var(--color-primary);
     font-size: 0.8rem;
 }
+
+/* Skills */
+#skills {
+    background-color: var(--color-primary-variant);
+    color: var(--color-text);
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    margin: 2rem 3rem;
+    border-radius: 8px;  /* skills__coding에 따로 배경 색을 지정해줬으므로 border-radius가 지정되어도 보이지 않음*/
+    overflow: hidden;  /* hidden을 사용하여 감춤 */
+}
+
+.skills__title {
+    color: var(--color-accent);
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.skills__coding {
+    grid-row: span 2;
+    padding: 1rem;
+    background-color: var(--color-primary);
+}
+
+.skills__tools {
+    padding: 1rem;
+}
+
+.skills__etc {
+    padding: 1rem;
+    background-color: var(--color-primary);
+    filter: brightness(150%);
+}
