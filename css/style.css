@@ -318,7 +318,7 @@ button:focus {
     right: 16px;
     width: 28px;
     height: 28px;
-    line-height: 28px;
+    line-height: 28px;  /* 가운데 정렬 */
     border-radius: 100%;
     background-color: var(--color-accent-variant);
     color: var(--color-text);
@@ -340,8 +340,8 @@ button:focus {
 
 .project {
     position: relative;
-    border-radius: 8px;  /* 아래에 텍스트가 존재하기 때문에 아래가 radius 적용이 되지 않음 */
-    overflow: hidden;
+    border-radius: 8px;  
+    overflow: hidden;  /* HTML 요소 밖으로 튀어나오는 컨텐츠를 숨김 */
 }
 
 .project__img {
@@ -379,4 +379,39 @@ button:focus {
     width: 50px;
     height: 2px;
     background-color: var(--color-accent);
+}
+
+/* Testimonials */
+.testimonials {
+    margin : 3rem;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.testimonial:nth-child(even) .testimonial__img {
+    order: 1;  /* 0부터 시작 */
+}
+
+.testimonial__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.testimonial__bubble {
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.testimonial__bubble__name {
+    color: var(--color-accent);
+    font-weight: bold;
+    filter: brightness(70%);
 }
