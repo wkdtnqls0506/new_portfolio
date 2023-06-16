@@ -1,3 +1,5 @@
+'use strict';
+
 // Header가 페이지 아래로 스크롤시 dark 스타일링 적용
 const header = document.querySelector('.header');
 const headerHeight = header.offsetHeight;
